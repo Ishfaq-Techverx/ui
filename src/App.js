@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import Features from "./Components/Features";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Profile from "./Components/Profile";
+import RoboLeft from "./Components/RoboLeft";
+import TrustedCustomers from "./Components/TrustedCustomers";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <section className="firstsection" style={{ position: "relative" }}>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+      </section>
+      <Header />
+      <Profile />
+      <section className="secondsection" style={{ position: "relative" }}>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <div className="color"></div>
+        <Features />
+        <TrustedCustomers />
+        <RoboLeft />
+        <Footer />
+      </section>
     </div>
   );
 }
